@@ -3,3 +3,32 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-image: url("../assets/images/wallpaper.jpg");
+    background-size: cover;
+}
+
+
+.vh100 {
+	height: 100vh;
+}
+
+.container-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img.logo {
+    width: 50%;
+}
