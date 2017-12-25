@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 /*
 body {
     background-image: url("../assets/images/wallpaper.jpg"); 
@@ -14,13 +15,12 @@ body {
 	height: 100vh;
 }
 
+/*Clase para centrar el gif*/
 .container-flex-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
-    
+    align-items: center;   
 }
 
 /*
@@ -36,6 +36,7 @@ img.logo {
     width: 50%;
 } */
 
+/*Estilo del título que aparece luego del gif*/
 .title {
     color: rgb(255, 43, 92);
 }
