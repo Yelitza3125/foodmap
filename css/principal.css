@@ -72,3 +72,21 @@ header button {
     margin-left: 2em;
     font-size: 1.5em;
 }
+
+.carousel-section {
+    margin-top: 3em;
+}
+
+.carousel-section img {
+    width: 100%;
+}
+
+
+.carousel-content {
+    display: none;
+    margin-bottom: 2em;
+}
+
+.carousel-content.active {
+    display: block;
+}
