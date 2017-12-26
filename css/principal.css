@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilo de header */
+
+.navbar {
+    margin-bottom: 0;
+}
+.container-flex{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+.logo {
+    width: 15%;
+    margin-right: 5em;
+}
+
+header button {
+    margin-left: 5em;   
+}
+
+/* Estilo de la section information */
+
+.information {
+    background-image: url('../assets/images/wallpaper.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title {
+   color: #fff;     
+}
+
+.container-info {
+    color: #898989;
+    background-color: #fff;
+}
+
+
+.info-title {
+    background-color: #ce1515;
+    color: #fff;
+} 
+
+.container-info p {
+    text-align: justify;
+}

@@ -6,8 +6,7 @@ setInterval(function title(){
     $('.title').animate({fontSize: '4em'}, 'swing');
 }, 3000);
 
-/*
-  setTimeout(function () {
-    
-	 }, 5000); */
+setTimeout(function () {
+    window.location.href = 'views/principal.html';
+	 }, 6000);
 });
