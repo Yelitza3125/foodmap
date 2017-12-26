@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de header */
+
+.navbar {
+    margin-bottom: 0;
+}
+.container-flex{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+.logo {
+    width: 15%;
+    margin-right: 5em;
+}
+
+header button {
+    margin-left: 5em;   
+}
