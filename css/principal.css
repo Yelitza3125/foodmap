@@ -58,3 +58,20 @@ header button {
 .container-info p {
     text-align: justify;
 }
+
+.search-content {
+    margin-top: 2em;
+}
+
+.search-title, .search-content span {
+    color: #fff;
+} 
+
+.search-title {
+    display: inline-block;
+}
+
+.search-content span {
+    margin-left: 2em;
+    font-size: 1.5em;
+}
