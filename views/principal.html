@@ -47,12 +47,32 @@
         <div class="row">
           <div class="col-xs-8 col-xs-offset-2 search-content">
             <div class="col-xs-12">
-              <h2 class="search-title">Empieza a disfrutar </h2>
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Buscar restaurantes">
-                <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Go!</button>
-                </span>
+              <h2 class="search-title"> Selecciona un distrito </h2>
+              <div class="select-group">
+                <select name="select" id="select" >
+                  <option value="Ancón">Ancón</option>
+                  <option value="value2" selected>Seleccionar</option>
+                  <option value="Ate">Ate</option>
+                  <option value="Carabayllo">Carabayllo</option>
+                  <option value="Comas">Comas</option>  
+                  <option value="Independencia">Independencia</option>
+                  <option value="Jesús María">Jesús María</option>
+                  <option value="La Molina">La Molina</option>
+                  <option value="Lince">Lince</option>
+                  <option value="Los Olivos">Los Olivos</option>
+                  <option value="Magdalena">Magdalena</option>
+                  <option value="Miraflores">Miraflores</option>
+                  <option value="Pueblo Libre">Pueblo Libre</option>
+                  <option value="Puente Piedra">Puente Piedra</option>
+                  <option value="Santiago de Surco">Santiago de Surco</option>
+                  <option value="San Borja">San Borja</option>
+                  <option value="San Isidro">San Isidro</option>
+                  <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+                  <option value="San Martin de Porres">San Martín de Porres</option>
+                  <option value="San Miguel">San Miguel</option> 
+                </select>
+                <button id ="search" class="btn btn-default col-xs-offset-5" type="submit">Go!</button>
+                
               </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
           </div>
@@ -91,6 +111,7 @@
     
   </main>
   <script src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <script src="../js/results.js"></script>
   <script src="../js/principal.js"></script> 
 </body>
 </html>

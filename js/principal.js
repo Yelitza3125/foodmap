@@ -1,7 +1,9 @@
 $(document).ready(function() {
-    /*
+  
+  
+    
     $('.info-title').animate({
-        padding: '0.5em 1em' }, 'slow'); */
+        padding: '0.5em 1em' }, 'slow'); 
 
         var target = 0;
         
@@ -42,7 +44,34 @@ $(document).ready(function() {
           $lastSlide.removeClass('active');
           $slide.addClass('active');
         };
-     
+        
+        var select = $('#select');
+        var btn = $('#search');
+        var option = $('option');
 
-});    
+        function select() {
+          if(select.val()) {
+            sentData();
+          }
+        }
+
+        $(btn).click(function sentData(event) {
+          var data = $(select).val();
+          localStorage.setItem('Datos' , data);
+         
+         window.location.href = '../views/results.html';
+          
+          
+          
+        });
+
+       
+        /*Funcion de Capturar, Almacenar datos y Limpiar campos*/ 
+});
+
+
+/*Tenemos un input, tipo texto, el cual pensamos escribir un nombre, le asignamos un identificador al input llamado nombretxt, entonces procedemos a capturar lo escrito en el campo de texto y guardarlo en una variable para luego guardarlo en el localstorage.
+
+var nom = document.getElementById(“nombretxt”).value;
+ localStorage.setItem(“Nombre”,nom);*/
 
