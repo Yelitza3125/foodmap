@@ -8,5 +8,7 @@ setInterval(function title(){
 
 setTimeout(function () {
     window.location.href = 'views/principal.html';
-	 }, 6000);
+     }, 6000);
+     
+   
 });

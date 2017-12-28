@@ -57,7 +57,7 @@ $(document).ready(function() {
 
         $(btn).click(function sentData(event) {
           var data = $(select).val();
-          localStorage.setItem('Datos' , data);
+          localStorage.setItem('datos', data);
          
          window.location.href = '../views/results.html';
           
