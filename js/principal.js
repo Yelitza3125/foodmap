@@ -1,77 +1,74 @@
 $(document).ready(function() {
+
+  // Animando el padding del título
+  $('.info-title').animate({
+    padding: '0.5em 1em' }, 'slow'); 
+
+  var rutaLocal = '../assets/images/';
+  var arrImagenes = [
+    {url: '1.jpg'},
+    {url: '2.jpg'},
+    {url: '3.jpg'},
+    {url: '4.jpg'}
+  ];
   
+  var index = 0;
   
+  // Instanciamos las variables de jQuery utilizamos el simbolo de $ solo para identificar las variables que guardan
+  // elementos del DOM que obtenemos con jQuery
+  var $img = $('#img');
+  var $slider = $('.slider');
+  var $divControl = $('.controles');
+  
+  // Inicializamos con la primera imagen
+  $img.attr('src', rutaLocal + arrImagenes[0].url);
     
-    $('.info-title').animate({
-        padding: '0.5em 1em' }, 'slow'); 
+  // Botones para cada imagen del array
+  for (var i in arrImagenes) {
+    $divControl.append('<button class="control"/>');
+  }
+  
+  // Variable jquery con los botones de la clase control creado en la línea 22
+  var $buttonControl = $('button.control');
+  console.log($buttonControl);
 
-        var target = 0;
-        
-        function loadPage() {
-            
-          var $buttons = $('.control');
-          var $previous = $('.previous');
-          var $next = $('.next');
-        
-          $buttons.click(changeImage);
-          $previous.click(previousImage);
-          $next.click(nextImage);
-        };
-        
-        function changeImage() {
-          target = parseInt($(this).data('target'));
-          showImage(target);
-        };
-        
-        function previousImage(e) {
-          e.preventDefault();
-          target = target - 1;
-          target = (target < 0) ? 4 : target;
-          showImage(target);
-          $buttons.css('background', 'blue');
-        };
-        
-        function nextImage(e) {
-          e.preventDefault();
-          target = target + 1;
-          target = (target > 4) ? 0 : target;
-          showImage(target);
-        };
-        
-        function showImage(target) {
-          var $lastSlide = $('div.active');
-          var $slide = $("div[data-slide='" + target + "']");
-          $lastSlide.removeClass('active');
-          $slide.addClass('active');
-        };
-        
-        var select = $('#select');
-        var btn = $('#search');
-        var option = $('option');
+  // Se utiliza el método jQuery.makeArray, para recorrerlo
 
-        function select() {
-          if(select.val()) {
-            sentData();
-          }
-        }
+  var $arrButton = $.makeArray($buttonControl);
 
-        $(btn).click(function sentData(event) {
-          var data = $(select).val();
-          localStorage.setItem('datos', data);
+  // Se comprueba si es un array con el método jQuery.isArray que es lo mismo que $.isArray    
+  console.log($.isArray($arrButton));  
+  // Se recorre el array de los botones para que al momento de dar click en el boton de control cambie la imagen
+  // correspondiente según el indice, para ello, se utiliza el método jQuery.each que es lo mismo que $.each
+  $.each($arrButton, function(i, val) {
+    $buttonControl.eq(i).on('click', function() {
+      $img.attr('src', rutaLocal + arrImagenes[i].url);
+    });
+  });	
+  
+  // Cuando se escuche el click en los botones de back y next
+  $slider.on('click', '#next', function(event) {
+    event.preventDefault();
+    index++;
+    index = (index >= arrImagenes.length) ? 0 : index;
+    $img.attr('src', rutaLocal + arrImagenes[index].url);
+  });
+  
+  $slider.on('click', '#back', function(event) {
+    event.preventDefault();
+    index--;
+    index = (index < 0) ? arrImagenes.length - 1 : index;
+    $img.attr('src', rutaLocal + arrImagenes[index].url);
+  });
+
+
+  /* Funcion de Capturar, Almacenar datos y Limpiar campos*/ 
+  $(btn).click(function sentData(event) {
+    var data = $(select).val();
+    localStorage.setItem('datos', data);
          
-         window.location.href = '../views/results.html';
-          
-          
-          
-        });
-
-       
-        /*Funcion de Capturar, Almacenar datos y Limpiar campos*/ 
+    window.location.href = '../views/results.html';
+  });
 });
 
-
-/*Tenemos un input, tipo texto, el cual pensamos escribir un nombre, le asignamos un identificador al input llamado nombretxt, entonces procedemos a capturar lo escrito en el campo de texto y guardarlo en una variable para luego guardarlo en el localstorage.
-
-var nom = document.getElementById(“nombretxt”).value;
- localStorage.setItem(“Nombre”,nom);*/
 
