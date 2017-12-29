@@ -11,7 +11,7 @@ $(document).ready(function() {
     {url: '3.jpg'},
     {url: '4.jpg'}
   ];
-  
+
   var index = 0;
   
   // Instanciamos las variables de jQuery utilizamos el simbolo de $ solo para identificar las variables que guardan
@@ -63,7 +63,7 @@ $(document).ready(function() {
 
 
   /* Funcion de Capturar, Almacenar datos y Limpiar campos*/ 
-  $(btn).click(function sentData(event) {
+  $('.btn').click(function sentData(event) {
     var data = $(select).val();
     localStorage.setItem('datos', data);
          
