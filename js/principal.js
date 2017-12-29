@@ -68,6 +68,7 @@ $(document).ready(function() {
     localStorage.setItem('datos', data);
          
     window.location.href = '../views/results.html';
+    $('#select').val('');
   });
 });
 
