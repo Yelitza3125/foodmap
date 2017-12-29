@@ -13,7 +13,7 @@ var foodMap = {
     'pagina web': 'https://edosushibar.com/platos-calientes/agemonos/',
     'califiacion': 4,
     'platos': ['Sashimi', 'Nigiri', 'Gunkan', 'Makis'],
-    'imagen': '../assets/images/edo/1.jpg'
+    'imagen': ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg']
   },
 
   'Hanzo': {
@@ -25,7 +25,7 @@ var foodMap = {
     'pagina web': 'http://hanzo.com.pe/',
     'califiacion': 4,
     'Platos': ['Sashimi', 'Nigiri', 'Gunkan', 'Makis', 'Ramen'],
-    'imagen': '../assets/images/hanzo/2.jpg'
+    'imagen': ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg']
   },
 
   'Tanuki': {
@@ -36,7 +36,7 @@ var foodMap = {
     'pagina web': 'https://www.facebook.com/pg/TanukiRestaurantjapones/about/?ref=page_internal',
     'califiacion': 5,
     'platos': ['Sashimi', 'Nigiri', 'Gunkan', 'Makis', 'Ramen', 'Bebidas Japonesas', 'Rolls'],
-    'imagen': '../assets/images/tanuki/3.jpg'
+    'imagen': ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg']
   },
 
   'Tokio Ramen': {
@@ -47,7 +47,7 @@ var foodMap = {
     'pagina web': 'https://www.facebook.com/jctsramen/?ref=br_rs',
     'califiación': 3,
     'platos': ['Ramen'],
-    'imagen': '../assets/images/tokio-ramen/4.jpg'
+    'imagen': ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg']
   },
 
   'Ko Asian Kitchen': {
@@ -59,6 +59,6 @@ var foodMap = {
     'pagina web': 'http://koasiankitchen.com/',
     'califiacion': 5,
     'platos': ['Sashimi', 'Nigiri', 'Gunkan', 'Makis', 'Ramen', 'Sushi', 'Rolls'],
-    'imagen': '../assets/images/ko-asian/1.jpg'
+    'imagen': ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg']
   },
 }

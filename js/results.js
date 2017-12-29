@@ -46,11 +46,21 @@ $(document).ready(function() {
         var containerRestaurant = $('<div class = "caption"></div>');
 
        
-        // Añadiendo imagenes
+        // Añadiendo imagenes al azar de cada carpeta
         var $img = $('<img>', {
           'class': 'results-img',
-          'src': imagenes
+          'src': '../assets/images/' + restaurant + '/' + imagenes[Math.floor(Math.random() * imagenes.length)]
         });
+
+        // Hover de las imágenes:
+        /*
+        $('.results-img').hover(
+          function() {
+            $(this).append($('<span> Edo Batayaki: Calamar, langostino y salmón con holantao, shiitake </span>'));
+          }, function() {
+            $(this).find('span:last').remove();
+          }
+        ); */
         
         var restaurantName = $('<h3/>', {
           'class': 'name',
