@@ -90,6 +90,13 @@ select option {
     color: #fff;
 }
 
+#search {
+    background-color: #ce1515;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 0.5em 1.5em;
+}
+
 /*Estilo del carrusel */
 
 .carousel-section {
@@ -139,14 +146,15 @@ div.controles {
     margin-left: 2px; 
 }
   
-   .control-click {
+.control-click {
     border-radius: 50%;
     margin-left: 1px;
     width: 20px;
     height:20px;
     background: rgba(255, 64, 131, 0.068);
     border-color: rgba(255, 64, 131, 0.068);
-    margin-left: 2px;
-  
-   }
+    margin-left: 2px;  
+}
+
+
   

@@ -26,6 +26,9 @@ $(document).ready(function() {
 
     var imagenes = content.imagen;
 
+    var webPage = content['pagina web'];
+    console.log(webPage);
+
     $.each(location, function(key, value) {
       // nombre del distrito.  
       var district = key;
@@ -33,6 +36,7 @@ $(document).ready(function() {
 
       var local = value;
       // console.log(local);
+
 
       /* Condicionando si el valor del select es igual a los distritos */ 
       if (datos === district) {
@@ -54,7 +58,7 @@ $(document).ready(function() {
         });
 
         // Función para los efectosde la imagen
-        efectosImg();
+        
         
         // Variable para establecer el nombre del restaurante
         var restaurantName = $('<h3/>', {
@@ -63,53 +67,64 @@ $(document).ready(function() {
 
         restaurantName.html(restaurant);
 
+        modalContent()
+
         var paragraph = $('<p/>', {
           'class': 'text',
           'html': infoRestaurant
         });
 
-        var btn = $('<button/>', {
-          'class': 'btn',
-          'html': 'Ver más',
-          'data-toggle': 'modal',
-          'data-target': '#myModal'
+        var web = $('<p/>', {
+          'html': webPage
         });
-
+        
 
         // Insertando los elementos
         row.append(col);
         col.append(thumbnail);
         thumbnail.append($img);
         thumbnail.append(containerRestaurant);
-        containerRestaurant.append(restaurantName, paragraph, btn);
+        containerRestaurant.append(restaurantName, paragraph);
+
+        efectosImg(); 
       } 
 
-     function efectosImg() {
-         $img.on('click', function() {
-           $img
-           .animate({width: 10}, 'slow')
-           .animate({width: innerWidth}, 'slow');
-         })
-           
-     }
+      function efectosImg() {
+        $img.on('click', function() {
+          $img
+            .animate({width: 10}, 'slow')
+            .animate({width: innerWidth}, 'slow');
+        });
+      }
+
+      /* Contenido del modal */
+      function modalContent() {
+        var adress =  $('<h4/>');
+        adress.html('Dirección: ' + local);
+        var places = $('<h3/>');
+        places.html(restaurant);
+        $('.modal-body').append(adress);
+        places.prependTo(adress);
+        var webPlace = $('<a/>', {
+          'html': restaurant,
+          'href': webPage,
+          'target': '_blank'
+        });
+
+        var webText = $('<h4/>', {
+          'html': 'Página web: '
+        });
+
+        webText.append(webPlace);
+        adress.append(webText);
+       
+      }
+      
+        
+      
     });
-    
-   
   });
 
+  
 });
 
-/*$('#animar-1').on('click', function() {
-    $('#animable')
-       
-      .animate({width: 200}, 'fast')
-      .animate({height: 50, width: 50}, 'swing');
-  })
-
-  $('#animar-2').on('click', function() {
-    $('#animable')
-      .animate({left: '50%'}, 'slow')
-      .animate({left: '40%'}, 'slow')
-      .animate({width: 200}, 'fast')
-      .animate({'font-size': '3rem'}, 1000);
-  })*/

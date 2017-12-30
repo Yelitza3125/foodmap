@@ -54,7 +54,18 @@ h2 {
     text-align: justify;
 }
 
-.btn {
+.btn-modal {
     background-color: #15c59c;
     color: #fff;
+    border: none;
+    padding: 1em;
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+
+.header-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
