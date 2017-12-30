@@ -1,11 +1,13 @@
 # Proyecto: Aplicación FoodMap
 
+![FoodMap](assets/images/app.jpg)
+
 ## Descripción del Proyecto:
 
 El siguiente proyecto es el desarrollo de un aplicación de búsqueda de restaurantes de comida japonesa. 
 La búsqueda se filtra por distrito y se retornan los lugares que coinciden con el distrito. 
 Se brinda información adicional como la descripción del restaurant, imágenes de los platos que se sirven, la dirección y la página web.
-El prototipo se ha creado con base a 5 restuurantes.
+El prototipo se ha creado con base a 5 resturantes.
 
 ## Descripción del arquetipo del usuario:
 
@@ -15,7 +17,7 @@ Ella considera que es difícil encontrar lugares de comida asiática, porque no 
 
 ## Funcionalidad de la aplicación:
 
-La aplicación ofrece primero una vista splash a modo de saludo al usuario, luego se redirecciona a la página principal, donde el usuario puede realizar el filtrado según los distritos de la ciudad.
+La aplicación ofrece primero una vista splash a modo de saludo al usuario, luego se redirecciona a la página principal, donde el usuario puede realizar el filtrado según los distritos de la ciudad. Además se muestra un slider con imágenes referenciales.
 
 Al seleccionar, los datos retornados son los restaurantes que se encuentran en el distrito seleccionado. Se ofrecen imágenes (con una animación de cambio de color al darle click), descripción del lugar y el plato especial del día.
 
