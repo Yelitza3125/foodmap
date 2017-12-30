@@ -49,9 +49,12 @@ h2 {
 
 .thumbnail {
     background-color: #4fe6c2;
+    padding: 0.5em;
 }
 .name {
     color: #292750;
+    background-color: #fff;
+    padding: 0.5em;
 }
 
 .text {

@@ -27,7 +27,7 @@ $(document).ready(function() {
     var imagenes = content.imagen;
 
     var webPage = content['pagina web'];
-    console.log(webPage);
+    // console.log(webPage);
 
     var plates = content.platos;    
     // console.log(plates);
@@ -95,7 +95,7 @@ $(document).ready(function() {
         containerRestaurant.append(restaurantName, paragraph, $dishes);
 
         // Función para los efectosde la imagen
-        efectosImg(); 
+        efectosImg();        
       } 
 
       function efectosImg() {
