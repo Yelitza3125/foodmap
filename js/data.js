@@ -35,7 +35,7 @@ var foodMap = {
     },
     'pagina web': 'https://www.facebook.com/pg/TanukiRestaurantjapones/about/?ref=page_internal',
     'califiacion': 5,
-    'platos': ['Sashimi', 'Nigiri', 'Gunkan', 'Makis', 'Ramen', 'Bebidas Japonesas', 'Rolls'],
+    'platos': ['Sashimi', 'Nigiri', 'Gunkan', 'Makis', 'Ramen', 'Rolls'],
     'imagen': ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg']
   },
 

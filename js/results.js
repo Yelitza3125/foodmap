@@ -29,6 +29,9 @@ $(document).ready(function() {
     var webPage = content['pagina web'];
     console.log(webPage);
 
+    var plates = content.platos;    
+    // console.log(plates);
+
     $.each(location, function(key, value) {
       // nombre del distrito.  
       var district = key;
@@ -46,7 +49,7 @@ $(document).ready(function() {
         
 
         // Creando los contenedores:
-        var col = $('<div class = "col-xs-6"> </div>');
+        var col = $('<div class = "col-xs-8 col-xs-offset-2"> </div>');
         var thumbnail = $('<div class = "thumbnail"> </div>');
         var containerRestaurant = $('<div class = "caption"></div>');
         
@@ -57,8 +60,12 @@ $(document).ready(function() {
           'src': '../assets/images/' + restaurant + '/' + imagenes[Math.floor(Math.random() * imagenes.length)]
         });
 
-        // Función para los efectosde la imagen
-        
+
+        // Creando el texto de los platos de los resturantes
+        var $dishes = $('<h4/>', {
+          'html': 'Especial del día: ' + plates[Math.floor(Math.random() * plates.length)],
+          'class': 'color-text'
+        });
         
         // Variable para establecer el nombre del restaurante
         var restaurantName = $('<h3/>', {
@@ -69,13 +76,14 @@ $(document).ready(function() {
 
         modalContent()
 
-        var paragraph = $('<p/>', {
+        var paragraph = $('<h4/>', {
           'class': 'text',
           'html': infoRestaurant
         });
 
         var web = $('<p/>', {
-          'html': webPage
+          'html': webPage,
+          'class': 'color-text'
         });
         
 
@@ -84,8 +92,9 @@ $(document).ready(function() {
         col.append(thumbnail);
         thumbnail.append($img);
         thumbnail.append(containerRestaurant);
-        containerRestaurant.append(restaurantName, paragraph);
+        containerRestaurant.append(restaurantName, paragraph, $dishes);
 
+        // Función para los efectosde la imagen
         efectosImg(); 
       } 
 
@@ -99,7 +108,7 @@ $(document).ready(function() {
 
       /* Contenido del modal */
       function modalContent() {
-        var adress =  $('<h4/>');
+        var adress = $('<h4/>');
         adress.html('Dirección: ' + local);
         var places = $('<h3/>');
         places.html(restaurant);
@@ -112,19 +121,14 @@ $(document).ready(function() {
         });
 
         var webText = $('<h4/>', {
-          'html': 'Página web: '
+          'html': 'Página web: ',
+          'class': 'text-web'
         });
 
         webText.append(webPlace);
-        adress.append(webText);
-       
+        adress.append(webText);      
       }
-      
-        
-      
     });
-  });
-
-  
+  });  
 });
 

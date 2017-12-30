@@ -4,6 +4,8 @@ $(document).ready(function() {
   $('.info-title').animate({
     padding: '0.5em 1em' }, 'slow'); 
 
+
+  /* Código del carrusel */
   var rutaLocal = '../assets/images/';
   var arrImagenes = [
     {url: '1.jpg'},
@@ -14,8 +16,8 @@ $(document).ready(function() {
 
   var index = 0;
   
-  // Instanciamos las variables de jQuery utilizamos el simbolo de $ solo para identificar las variables que guardan
-  // elementos del DOM que obtenemos con jQuery
+  /* Instancializando las variables de jQuery para identificar las variables que guardan
+   elementos del DOM que obtenemos con jQuery */
   var $img = $('#img');
   var $slider = $('.slider');
   var $divControl = $('.controles');
@@ -62,7 +64,7 @@ $(document).ready(function() {
   });
 
 
-  /* Funcion de Capturar, Almacenar datos y Limpiar campos*/ 
+  /* Funcion de Capturar, Almacenar datos y Limpiar el campo del select*/ 
   $('.btn').click(function sentData(event) {
     var data = $(select).val();
     localStorage.setItem('datos', data);

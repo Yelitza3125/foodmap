@@ -90,6 +90,7 @@ select option {
     color: #fff;
 }
 
+/* Estilo del botón buscar */
 #search {
     background-color: #ce1515;
     color: #fff;
@@ -113,8 +114,7 @@ select option {
   
 a#next {
     display: flex;
-    justify-content: flex-end; 
-      
+    justify-content: flex-end;      
 }
 
 div.buttons {

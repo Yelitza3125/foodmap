@@ -45,13 +45,23 @@ h2 {
     filter: none;
 }
 
+/* Estilo del elemento thumbnail */
+
+.thumbnail {
+    background-color: #4fe6c2;
+}
 .name {
-    color: #000;
+    color: #292750;
 }
 
 .text {
     height: 10vh;
     text-align: justify;
+    color: #000;
+}
+
+.color-text {
+    color: #000;
 }
 
 .btn-modal {
@@ -68,4 +78,30 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* Estilo del modal */
+
+.modal-content {
+    background-color: #45facd;
+    color: #292750;
+}
+
+.modal-header {
+    background-color: #fff;
+    color: #15c59c;
+}
+
+
+.modal-body h4.text-web a {
+    color: #000;
+}
+
+.modal-body h4.text-web a:hover {
+    text-decoration: underline;
+}
+
+.modal-body h3 {
+    background-color: #fff;
+    padding: 0.5em;
 }
