@@ -129,6 +129,11 @@ $(document).ready(function() {
         adress.append(webText);      
       }
     });
-  });  
+  });
+  
+  /* Función para que al cerrar el modal se redireccione a la págima principal */
+  $('#close').click(function() {
+    window.location.href = '../views/principal.html';
+  }); 
 });
 
