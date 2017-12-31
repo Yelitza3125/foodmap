@@ -4,7 +4,7 @@
 
 ## Descripción del Proyecto:
 
-El siguiente proyecto es el desarrollo de un aplicación de búsqueda de restaurantes de comida japonesa. 
+El siguiente proyecto es el desarrollo de un aplicación mobile, de búsqueda de restaurantes de comida japonesa.
 La búsqueda se filtra por distrito y se retornan los lugares que coinciden con el distrito. 
 Se brinda información adicional como la descripción del restaurant, imágenes de los platos que se sirven, la dirección y la página web.
 El prototipo se ha creado con base a 5 resturantes.
