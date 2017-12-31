@@ -74,7 +74,8 @@ $(document).ready(function() {
 
         restaurantName.html(restaurant);
 
-        modalContent()
+        /* LLamando a la función del contenido del modal */
+        modalContent();
 
         var paragraph = $('<h4/>', {
           'class': 'text',
