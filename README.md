@@ -15,13 +15,20 @@ Ari es una chica de 25 años, trabaja de lunes a viernes y los sábados hasta el
 La mayoría de las veces salen a comer. Les gusta a ambos explorar lugares nuevos, especialmente la comdia asiática.
 Ella considera que es difícil encontrar lugares de comida asiática, porque no todod tienen una página en fácebook y/o no la mantienen actualizada.
 
-## Funcionalidad de la aplicación:
+## Flujo de la aplicación:
 
-La aplicación ofrece primero una vista splash a modo de saludo al usuario, luego se redirecciona a la página principal, donde el usuario puede realizar el filtrado según los distritos de la ciudad. Además se muestra un slider con imágenes referenciales.
+### Vista index:
+La aplicación ofrece primero una vista splash a modo de saludo al usuario, con un gif de un sushi y una frase de saludo. Se escogió la frase "Itadakimasu", porque en la cultura japonesa se utiliza para agradecer por los alimentos que se van a consumir"
 
-Al seleccionar, los datos retornados son los restaurantes que se encuentran en el distrito seleccionado. Se ofrecen imágenes (con una animación de cambio de color al darle click), descripción del lugar y el plato especial del día.
+### Vista principal:
+Luego se redirecciona a la página principal, donde se muestra un pequeño texto sobre lo que ofrece la aplicación. 
+Se muestra un select, para que el usuario puede realizar un filtrado de restaurantes según los distritos de Lima Metropolitana.
+Además se muestra un slider con imágenes referenciales.
+Luego de seleccionar el distrito, con el botón "Go!", se lleva al usuario a la siguiente vista.
 
-Con un modal, se da información más detallada de dirección y la página web. Al cerrar el modal, se envía al usuario a la página principal.
+### Vista results:
+En esta vista se muestran resultados de la búsqueda. Son los restaurantes que se encuentran en el distrito seleccionado. Se ofrecen imágenes (con una animación de cambio de color al darle click), descripción del lugar y el plato especial del día.
+Mediante el botón de "Ver detalles", se muestra con un modal información más detallada: direcciónes y el enlace a la página web. Al cerrar el modal,se envía al usuario a la página principal de filtrado.
 
 ## Herramientas utilizadas:
 
