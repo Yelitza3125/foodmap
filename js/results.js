@@ -56,7 +56,7 @@ $(document).ready(function() {
 
         // Añadiendo imagenes al azar de cada carpeta
         var $img = $('<img>', {
-          'class': 'results-img',
+          'class': 'results-img img-responsive',
           'src': '../assets/images/' + restaurant + '/' + imagenes[Math.floor(Math.random() * imagenes.length)]
         });
 
