@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   // Animando el padding del título
   $('.info-title').animate({
     padding: '0.5em 1em' }, 'slow'); 
@@ -7,12 +6,7 @@ $(document).ready(function() {
 
   /* Código del carrusel */
   var rutaLocal = '../assets/images/';
-  var arrImagenes = [
-    {url: '1.jpg'},
-    {url: '2.jpg'},
-    {url: '3.jpg'},
-    {url: '4.jpg'}
-  ];
+  var arrImagenes = [ '1.jpg', '2.jpg', '3.jpg', '4.jpg'];
 
   var index = 0;
   
@@ -23,46 +17,24 @@ $(document).ready(function() {
   var $divControl = $('.controles');
   
   // Inicializamos con la primera imagen
-  $img.attr('src', rutaLocal + arrImagenes[0].url);
+  $img.attr('src', rutaLocal + arrImagenes[0]);
     
-  // Botones para cada imagen del array
-  for (var i in arrImagenes) {
-    $divControl.append('<button class="control"/>');
+  // Tiempo de cambio
+  var time = 3000;
+  
+  // Funcion  random de las imágenes
+  function randomImg() {
+    var randVal = Math.random() * 4;
+    return typeof 0 === 'undefined' ? Math.round(randVal) : randVal.toFixed(0);
   }
-  
-  // Variable jquery con los botones de la clase control creado en la línea 22
-  var $buttonControl = $('button.control');
-  console.log($buttonControl);
-
-  // Se utiliza el método jQuery.makeArray, para recorrerlo
-
-  var $arrButton = $.makeArray($buttonControl);
-
-  // Se comprueba si es un array con el método jQuery.isArray que es lo mismo que $.isArray    
-  console.log($.isArray($arrButton));  
-  // Se recorre el array de los botones para que al momento de dar click en el boton de control cambie la imagen
-  // correspondiente según el indice, para ello, se utiliza el método jQuery.each que es lo mismo que $.each
-  $.each($arrButton, function(i, val) {
-    $buttonControl.eq(i).on('click', function() {
-      $img.attr('src', rutaLocal + arrImagenes[i].url);
-    });
-  });	
-  
-  // Cuando se escuche el click en los botones de back y next
-  $slider.on('click', '#next', function(event) {
-    event.preventDefault();
-    index++;
-    index = (index >= arrImagenes.length) ? 0 : index;
-    $img.attr('src', rutaLocal + arrImagenes[index].url);
-  });
-  
-  $slider.on('click', '#back', function(event) {
-    event.preventDefault();
-    index--;
-    index = (index < 0) ? arrImagenes.length - 1 : index;
-    $img.attr('src', rutaLocal + arrImagenes[index].url);
-  });
-
+  // Función timer
+  var timer = setInterval(function() {
+    // Seleciona una imagen de la lista
+    var ram = arrImagenes[parseFloat(randomImg(arrImagenes.length)) ];
+    // Cambia la imagen
+    $img.attr('src', rutaLocal + ram);  
+  }, time);
+ 
 
   /* Funcion de Capturar, Almacenar datos y Limpiar el campo del select*/ 
   $('.btn').click(function sentData(event) {

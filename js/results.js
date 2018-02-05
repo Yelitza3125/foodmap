@@ -49,7 +49,7 @@ $(document).ready(function() {
         
 
         // Creando los contenedores:
-        var col = $('<div class = "col-xs-8 col-xs-offset-2"> </div>');
+        var col = $('<div class = "col-xs-8 col-xs-offset-2 col-lg-4"> </div>');
         var thumbnail = $('<div class = "thumbnail"> </div>');
         var containerRestaurant = $('<div class = "caption"></div>');
         

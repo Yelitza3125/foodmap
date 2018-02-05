@@ -4,31 +4,44 @@
     padding: 0;
 }
 
-.information{
-    height: 100vh;
-}
 
 /* Estilo de header */
 
 .navbar {
     margin-bottom: 0;
+    height: 15vh;
 }
+
 .container-flex{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+   /* flex-direction: row-reverse; */
+    justify-content: center;
     align-items: center;
     background-color: #fff;
 }
 
 
 .logo {
-    width: 15%;
-    margin-right: 5em;
+    width: 12%;
 }
 
-header button {
-    margin-left: 5em;   
+.container-fluid .navbar-header{
+    display: inline-block !important;
+}
+
+.navbar-nav li {
+    margin-right: 1em; 
+}
+
+.text-title , .sub-text {
+    color: #fff;
+    display: inline-block;
+}
+
+
+.sub-text {
+    font-size: 1.5em;
+    margin-left: 1em;
 }
 
 /* Estilo de la section information */
@@ -43,13 +56,12 @@ header button {
     align-items: center;
 }
 
-.title {
-   color: #fff;     
-}
+
 
 .container-info {
     color: #898989;
     background-color: #fff;
+    border-radius: 5px;
 }
 
 
@@ -62,7 +74,7 @@ header button {
     text-align: justify;
 }
 
-.search-content, button {
+.search-content {
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -98,18 +110,19 @@ select option {
     background-color: #ce1515;
     color: #fff;
     font-size: 1.2em;
-    padding: 0.5em 1.5em;
+    padding: 0.5em 1em;
 }
 
 /*Estilo del carrusel */
 
 .carousel-section {
     margin-top: 1em;
+    width: 80%;
+    height: 20vh;
 }
 
 .carousel-section img {
     width: 100%;
-    height: 20vh;
     border-radius: 5%;
     border: 0.5em solid #fff;
 }
@@ -121,7 +134,7 @@ a#next {
 }
 
 div.buttons {
-    margin-top: 1em;
+    margin-top: 2em;
     display: flex;
     justify-content: space-between;   
 }
@@ -159,5 +172,36 @@ div.controles {
     margin-left: 2px;  
 }
 
+.display-flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
 
+.display-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 970px) {
+  
+    .text-title {
+        font-size: 5em;
+    }
+
+    .information {
+        background-size: contain;
+        height: 100vh;
+    }
+
+    .container-info {
+        padding: 1em;
+    }
+  
+    
+}
   

@@ -4,31 +4,37 @@
     padding: 0;
 }
 
+
 /* Estilo de header */
 
 .navbar {
     margin-bottom: 0;
+    height: 15vh;
 }
 
 .container-flex{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+   /* flex-direction: row-reverse; */
+    justify-content: center;
     align-items: center;
     background-color: #fff;
 }
 
 
 .logo {
-    width: 15%;
-    margin-right: 5em;
+    width: 12%;
 }
 
-header button {
-    margin-left: 5em;   
+.container-fluid .navbar-header{
+    display: inline-block !important;
 }
 
-h2 {
+.navbar-nav li {
+    margin-right: 1em; 
+}
+
+.color-white {
+    color: #fff;
     margin-top: 2em;
     margin-bottom: 1em;
 }
@@ -47,14 +53,24 @@ h2 {
 
 /* Estilo del elemento thumbnail */
 
+.results {
+    background-image: url('../assets/images/wallpaper.jpg');
+    background-size: cover;
+    height: auto;
+}
+
 .thumbnail {
-    background-color: #4fe6c2;
+    background-color: #fff;
     padding: 0.5em;
 }
 .name {
-    color: #292750;
-    background-color: #fff;
+    color: #fff;
+    background-color: #ce1515;
     padding: 0.5em;
+}
+
+.results-img {
+    height: 30vh !important;
 }
 
 .text {
@@ -68,7 +84,7 @@ h2 {
 }
 
 .btn-modal {
-    background-color: #15c59c;
+    background-color: #ce1515;
     color: #fff;
     border: none;
     padding: 1em;
@@ -86,13 +102,13 @@ h2 {
 /* Estilo del modal */
 
 .modal-content {
-    background-color: #45facd;
-    color: #292750;
+    background-color: #fff;
+    color: #000;
 }
 
 .modal-header {
-    background-color: #fff;
-    color: #15c59c;
+    background-color: #ce1515;
+    color: #fff;
 }
 
 
@@ -105,6 +121,16 @@ h2 {
 }
 
 .modal-body h3 {
-    background-color: #fff;
+    background-color: #ce1515;
+    color: #fff;
     padding: 0.5em;
+}
+
+
+@media (min-width: 970px) {
+    
+    .results {
+        background-size: contain;
+        height: auto;
+    }
 }
