@@ -4,16 +4,38 @@
 
 ## Descripción del Proyecto:
 
-El siguiente proyecto es el desarrollo de un aplicación mobile, de búsqueda de restaurantes de comida japonesa.
-La búsqueda se filtra por distrito y se retornan los lugares que coinciden con el distrito. 
+El siguiente proyecto es el desarrollo de un aplataforma web de búsqueda de restaurantes de comida japonesa. El formato es mobile friendly
+La búsqueda se filtra por distrito y se retornan los lugares que coinciden con la búsqueda.
 Se brinda información adicional como la descripción del restaurant, imágenes de los platos que se sirven, la dirección y la página web.
 El prototipo se ha creado con base a 5 resturantes.
 
-## Descripción del arquetipo del usuario:
+## Arquetipo del usuario:
 
-Ari es una chica de 25 años, trabaja de lunes a viernes y los sábados hasta el mediodía. Para relajarse aprovecha los fines de semana para salir con su novio. 
+### Datos:
+Nombre: Ari.
+Edad: 25 años.
+Ocupación: Diseñadora Gráfica
+Distrito de residencia: lince.
+
+### Escenario
+Ari trabaja de lunes a viernes y los sábados hasta el mediodía. Para relajarse aprovecha los fines de semana para salir con su novio. 
 La mayoría de las veces salen a comer. Les gusta a ambos explorar lugares nuevos, especialmente la comdia asiática.
 Ella considera que es difícil encontrar lugares de comida asiática, porque no todod tienen una página en fácebook y/o no la mantienen actualizada.
+
+
+### Frustraciones
+
+- No encuentra diversidad de restaurantes en su distrito.
+- La mayoría de restaurantes de comida extranjera son caros.
+
+### Metas:
+- Tener su propia empresa.
+- Viajar y conocer diferentes culturas.
+
+### Necesidades:
+- Encontrar un medio para informarse rápidamente sobre lugares dénde comer.
+- Tener disponibilidad de opciones para hacer una elección.
+
 
 ## Flujo de la aplicación:
 
